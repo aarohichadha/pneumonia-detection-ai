@@ -8,14 +8,14 @@
 [![Python](https://img.shields.io/badge/Python-3.11.9-blue.svg)](https://python.org)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.19.0-orange.svg)](https://tensorflow.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live_App-red.svg)](https://pneumodetectai.streamlit.app)
-[![HuggingFace](https://img.shields.io/badge/🤗_Model-Live_on_HuggingFace-yellow.svg)](https://huggingface.co/ayushirathour/chest-xray-pneumonia-detection)
+
 [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.17520564-blue.svg)](https://zenodo.org/records/17520564)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17531598.svg)](https://doi.org/10.5281/zenodo.17531598)
-[![Validation](https://img.shields.io/badge/Cross--Operator_Validation-86%25_Accuracy-green.svg)](https://github.com/ayushirathour/chest-xray-pneumonia-detection)
+
 
 **Advanced Deep Learning Model with Research-Grade Performance & Real-World Validation**
 
-*Developed by **Ayushi Rathour***
+
 
 ---
 
@@ -51,7 +51,7 @@ Pneumonia affects millions globally, requiring rapid and accurate diagnosis from
 * **Strong Generalization** with only 8.8% accuracy drop on unseen data
 * **Production Ready** with live web interface and RESTful API
 
-> **⚡ TL;DR:** AI detects pneumonia in pediatric chest X-rays with clinically validated performance. **[Try Live Demo](https://pneumodetectai.streamlit.app/)** | **[Download Model](https://huggingface.co/ayushirathour/chest-xray-pneumonia-detection)**
+
 
 ---
 
@@ -173,17 +173,11 @@ This end-to-end medical AI system demonstrates the complete journey from **resea
 
 *Choose your preferred way to get started:*
 
-### **🌐 Option 1: Live Web App (No Setup)**
+### **Live Web App (No Setup)**
 **🔗 [Try PneumoDetect AI Now](https://pneumodetectai.streamlit.app/)**
 * Upload X-rays instantly and get results in 2.5 seconds
 * Perfect for testing, demos, and quick analysis
 
-### **💻 Option 2: Run Locally (Streamlit)**
-```bash
-git clone https://github.com/ayushirathour/chest-xray-pneumonia-detection-ai
-cd chest-xray-pneumonia-detection-ai/api
-pip install -r ../requirements.txt
-streamlit run streamlit_api_folder/streamlit_app.py
 ```
 
 ### **🔌 Option 3: API Server (FastAPI)**
@@ -198,11 +192,7 @@ Access docs at: http://localhost:8000/docs
 from huggingface_hub import hf_hub_download
 import tensorflow as tf
 
-# Download and load model
-model_path = hf_hub_download(
-    repo_id="ayushirathour/chest-xray-pneumonia-detection",
-    filename="best_chest_xray_model.h5"
-)
+
 model = tf.keras.models.load_model(model_path)
 ```
 
@@ -407,7 +397,7 @@ This project welcomes contributions in:
 - **Deployment** in resource-limited settings
 - **Documentation** and tutorials
 
-See [Issues](https://github.com/ayushirathour/chest-xray-pneumonia-detection-ai/issues) for current collaboration opportunities.
+
 
 ### **Contributing Guidelines:**
 1. Fork the repository
@@ -436,8 +426,7 @@ See [Issues](https://github.com/ayushirathour/chest-xray-pneumonia-detection-ai/
 
 ### **🎯 Take Action:**
 * **[🌐 Try Live Demo](https://pneumodetectai.streamlit.app/)** to experience the system in 2.5 seconds
-* **[📥 Download Model](https://huggingface.co/ayushirathour/chest-xray-pneumonia-detection)** to integrate into your projects
-* **[⭐ Star Repository](https://github.com/ayushirathour/chest-xray-pneumonia-detection-ai)** to support open medical AI
+
 * **[📖 API Documentation](http://localhost:8000/docs)** when running locally
 * **[📄 View Paper](https://doi.org/10.5281/zenodo.17520564)** - Published research
 
@@ -447,72 +436,28 @@ See [Issues](https://github.com/ayushirathour/chest-xray-pneumonia-detection-ai/
 * 💻 **Python Developers** for API optimization and new features
 * 📊 **Data Scientists** for model improvement and validation expansion
 
-### **📞 Contact:**
 
-**Ayushi Rathour** *Biotechnology Graduate | Building AI for Healthcare*
 
-* **📧 Email:** [ayushirathour1804@gmail.com](mailto:ayushirathour1804@gmail.com)
-* **💼 LinkedIn:** [Ayushi Rathour](https://linkedin.com/in/ayushi-rathour)
-* **🐙 GitHub:** [@ayushirathour](https://github.com/ayushirathour)
-* **🤗 HuggingFace:** [ayushirathour](https://huggingface.co/ayushirathour)
-* **🔬 Zenodo:** [10.5281/zenodo.17520564](https://zenodo.org/records/17520564)
-
----
 
 
 ## 📄 **Citation & License**
 
 ### **Research Publication**
 
-**Ayushi Rathour. (2025).** *Pediatric Pneumonia Detection with a Lightweight, Cross-Operator Validated Deep Learning Model.*  
-In *International Journal of Science, Engineering and Technology (Vol. 13, No. 5).*  
-Zenodo. [https://doi.org/10.5281/zenodo.17531598](https://doi.org/10.5281/zenodo.17531598)
-
----
 
 ### **Code & Dataset Archive**
-
-**Ayushi Rathour. (2025).** *Chest X-Ray Pneumonia Detection: Cross-Operator Validated AI System (v1.0).*  
-Zenodo. [https://doi.org/10.5281/zenodo.17520564](https://doi.org/10.5281/zenodo.17520564)
-
----
 
 ### **BibTeX:**
 ```bibtex
 @article{rathour2025paper,
   title={Pediatric Pneumonia Detection with a Lightweight, Cross-Operator Validated Deep Learning Model},
-  author={Rathour, Ayushi},
+
   journal={International Journal of Science, Engineering and Technology},
   volume={13},
   number={5},
   year={2025},
   doi={10.5281/zenodo.17531598}
 }
-
-@misc{rathour2025code,
-  title={Chest X-Ray Pneumonia Detection: Cross-Operator Validated AI System (v1.0)},
-  author={Rathour, Ayushi},
-  year={2025},
-  note={Cross-operator validation on 485 independent samples. Bootstrap statistical verification included.},
-  doi={10.5281/zenodo.17520564},
-  url={https://github.com/ayushirathour/chest-xray-pneumonia-detection-ai}
-}
-```
-### **📚 APA Citation**
-```text
-Rathour, A. (2025). Pediatric Pneumonia Detection with a Lightweight, Cross-Operator Validated Deep Learning Model. 
-In International Journal of Science, Engineering and Technology (Vol. 13, No. 5). Zenodo. 
-https://doi.org/10.5281/zenodo.17531598
-```
-```text
-Rathour, A. (2025). Chest X-Ray Pneumonia Detection: Cross-Operator Validated AI System (v1.0). 
-Zenodo. https://doi.org/10.5281/zenodo.17520564
-```
----
-**License:** [MIT](LICENSE) (see LICENSE for complete terms)
-
----
-
 ## 🏆 **Acknowledgments**
 
 * **Training Dataset:** [Paul Timothy Mooney - Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
